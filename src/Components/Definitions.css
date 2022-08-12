@@ -1,0 +1,47 @@
+.definitions
+{
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    
+    height: 60vh;
+   padding-top: 7px;
+    border: 10px solid rgb(82, 77, 77);
+    border-radius: 10px;
+}
+
+#empty
+{
+    margin-left: 20px;
+    margin-top: 10px;   
+    font-size: 25px;    
+    color: aliceblue;
+}
+
+
+#display
+{
+    display: flex;
+    flex-direction: column; 
+    margin:3px 10px 0px 15px;
+    border-radius: 7px;
+    background-color: rgb(222, 223, 223);
+    margin: 20px;
+    padding: 8px;
+    
+}
+
+#displayMeaning
+{
+        font-family: 'PT Serif';
+        color: rgb(8, 8, 46);
+        font-size: 23px;
+        font-weight: bolder;
+}
+#displayExample
+{
+    font-family: "Port Lligat Slab";
+    font-size: 22px;
+}
+

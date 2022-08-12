@@ -1,0 +1,21 @@
+
+
+.header
+{
+    
+    color: aliceblue;
+    display: flex;
+    justify-content:space-evenly;
+    /* width: 35vh; */
+    flex-direction: column;
+    
+}
+#wordweb{
+    
+    font-family:'Roboto Mono';
+    font-size: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
