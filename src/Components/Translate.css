@@ -38,3 +38,13 @@
     border: 0.1px thin;
     border-radius: 8px;
 }
+
+@media (min-width:1600px) {
+    .translate
+    {
+       width: 20vw;
+       height: 40vh;
+       float: right;
+       margin-left: 10px;
+    }   
+}

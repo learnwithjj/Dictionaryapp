@@ -4,7 +4,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
-    
+    width: 60vw;
     height: 60vh;
    padding-top: 7px;
     border: 10px solid rgb(82, 77, 77);
@@ -45,3 +45,11 @@
     font-size: 22px;
 }
 
+@media (min-width:1600px) {
+
+    .definitions{
+        margin-top: 90px;
+        width: 60vw;
+    }
+    
+}

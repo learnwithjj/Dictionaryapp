@@ -25,3 +25,17 @@
     border-radius: 15px;
     
 }
+
+@media (min-width:1600px) {
+    .middle{
+        width: 30vw;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        
+    }
+    #audio{
+        width: 60%;
+    }
+    
+    
+}
