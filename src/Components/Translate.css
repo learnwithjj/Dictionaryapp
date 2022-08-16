@@ -42,9 +42,9 @@
 @media (min-width:1600px) {
     .translate
     {
-       width: 20vw;
+       width: 10vw;
        height: 40vh;
        float: right;
-       margin-left: 10px;
+       margin-left: 100px;
     }   
 }
