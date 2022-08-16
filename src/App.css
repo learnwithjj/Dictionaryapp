@@ -1,7 +1,7 @@
 .App
 {
     background: rgb(50, 49, 49);
-    height: 200%;
+    height: auto;
 }
 
 #displayboth
@@ -14,4 +14,5 @@
     color: white;
     padding: 5px;
     font-size: 20px;
+    
 }

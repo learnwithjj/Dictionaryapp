@@ -1,0 +1,40 @@
+.translate
+{
+    float: right;
+}
+
+#showTranslation
+{
+    background-color: rgb(50, 49, 49);
+    color: aliceblue;
+    font-size: 40px;
+    margin: 20px 0px 10px 0px;
+    padding: 10px 20px 0px 30px;
+    height: 25vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: solid rgb(78, 77, 77);
+}
+
+#emptyTranslate
+{
+    background-color: rgb(50, 49, 49);
+    color: rgb(88, 85, 85);
+    height: 28vh;
+    width: 10vw;
+    margin-left: 10px;
+    font-size: 40px;
+
+}
+
+#selectLanguage
+{
+    width: 40vh;
+    height: 6vh;
+    background-color: rgb(50, 49, 49);
+    color: rgb(217, 204, 204);
+    font-size: 18px;
+    padding-left: 10px;
+    border: 0.1px thin;
+    border-radius: 8px;
+}

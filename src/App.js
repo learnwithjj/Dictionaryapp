@@ -7,6 +7,8 @@ import { Container} from '@mui/system';
 import {debounce} from "lodash";
 import Definitions from './Components/Definitions';
 import Middle from "./Components/Middle"
+import { BsWindowSidebar } from 'react-icons/bs';
+import Translate from './Components/Translate';
 
 function App() {
 
@@ -15,7 +17,6 @@ function App() {
   const dictionaryApi=async() => {
     try{
       const data=await(axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`));
-      
       setMeanings(data.data);
     }
     
@@ -25,9 +26,12 @@ function App() {
     }
       
   }
+
+ 
   React.useEffect(()=>
   {
     dictionaryApi();
+    
     console.log(meaning);
   },[word])
    
@@ -35,22 +39,25 @@ function App() {
   {
     setWord(text);
   },[1000]);
-
-
+  
+    
   
     
 
     
   return (
     <div className="App">
+   
+      
+
       <Container maxWidth="md" >
-        <Header />
+        <Header /> 
          
         <div  style={{marginTop:"30px"}}  >
        <TextField  id="filled-basic" label="Enter here"  variant="standard"  onChange={(e) => handleText(e.target.value)}/>
-        
+       <Translate word={word}/>
         <Middle word={word} meaning={meaning}/>
-
+        
         </div> 
           <Definitions word={word}  meaning={meaning}/>
           
