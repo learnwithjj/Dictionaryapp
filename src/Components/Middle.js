@@ -22,9 +22,21 @@ const Middle=({word,meaning})=>
             </div>
         );
     }
+    const ShowSynonyms=()=>
+    {
+        return(<div id="showsynonyms">
+            {word && meaning[0] && meaning[0].meanings[0] && <div style={{fontFamily:"Rubik",fontSize:"20px",color:"peachpuff"}}><span id="synonym" >Synonyms : </span>{meaning[0].meanings[0].synonyms.map((s)=>`${s}, `)}</div> }
+        </div>)
+    }
+
     React.useEffect(()=>
     {
         <Showpartofspeech/>
+    },[word])
+
+    React.useEffect(()=>
+    {
+        <ShowSynonyms/>
     },[word])
     const Showphonetic=()=>
     {
@@ -34,6 +46,7 @@ const Middle=({word,meaning})=>
             </div>
         );
     }
+
     React.useEffect(()=>
     {
         <Showphonetic/>
@@ -43,6 +56,7 @@ const Middle=({word,meaning})=>
             
         <AudioCheck/> <Showpartofspeech/>
             <Showphonetic/>
+            <ShowSynonyms/>
             
         </div>
     )

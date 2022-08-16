@@ -18,6 +18,7 @@ function App() {
     try{
       const data=await(axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`));
       setMeanings(data.data);
+      console.log(meaning);
     }
     
     catch(error)
